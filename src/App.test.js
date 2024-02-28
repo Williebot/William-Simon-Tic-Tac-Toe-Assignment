@@ -20,8 +20,8 @@ it('starts the game with X', () => {
 it('allows a square to be clicked', () => {
   render(<App />);
   const buttons = screen.getAllByRole('button');
-  // Assuming the first button is a square in the tic-tac-toe game
-  fireEvent.click(buttons[0]); // Simulate clicking the first square
-  // The square should now contain 'X'
+  // This assumes first button is a square in the tic-tac-toe game
+  fireEvent.click(buttons[0]); // Simulates clicking the first square
+  // This square should now contain 'X'
   expect(buttons[0]).toHaveTextContent('X');
 });
