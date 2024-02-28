@@ -33,7 +33,7 @@
  
  .board {
   display: grid;
-  grid-template-columns: repeat(3, 100px); /* creates a 3x3 grid */
+  grid-template-columns: repeat(3, 100px); /* this creates the 3x3 grid */
   grid-gap: 0px;
   margin-bottom: 20px;
   border: 2px solid #000;
@@ -47,7 +47,7 @@
   background: #ee0d0d;
   border: 1px solid #040101;
   padding: 0;
-  font-size: 2em; /* Large font size for X and O */
+  font-size: 2em; /* creates large font size for the Xs and Os */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -76,7 +76,7 @@
  
  
  .ui.button {
-  width: auto; /* Adjust width as needed or set to 100% for full width */
+  width: auto; /* Width of the buttons left it on auto */
   margin-bottom: 10px; /* Spacing between buttons */
  }
  
@@ -87,7 +87,7 @@
  }
  
  
- /* Ensure the game scales nicely on smaller screens */
+ /* Ensures that the game scales nicely on smaller screens i dont know what computer you have */
  @media (max-width: 600px) {
   .board {
     grid-template-columns: repeat(3, 90px);
